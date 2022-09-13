@@ -7,6 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>hello</h1>
+        <h2>This is branch A2</h2>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
