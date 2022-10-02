@@ -4,6 +4,7 @@ a{text-decoration: none;}
     padding: 16px;
 }
 .wd-nav-tabs{
+    font-size: 15px;
     padding: 0px;
 }
 .wd-color-gray{
@@ -55,9 +56,14 @@ a{text-decoration: none;}
 .wd-gear-size{
     transform: scale(1.5, 1.5);
 }
+.wd-search-bar{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 #wd-search{
-    width: 320px;
+    width: 570px;
     height: 35px;
     border: 1px solid darkgray;
     border-radius: 30px;
@@ -66,7 +72,7 @@ a{text-decoration: none;}
 }
 
 #wd-search input{
-    width: 270px;
+    width: 150px;
     height: 35px;
     border: 0;
     font-size: 14px;
