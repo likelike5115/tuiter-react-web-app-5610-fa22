@@ -13,7 +13,7 @@ function exploreComponent() {
 <!--    <h3>ExploreComponent</h3>-->
     ${ExploreComponent()}
    </div>
-   <div class="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
+   <div class="col-xxl-4 col-xl-4 col-lg-4 d-xxl-inline d-xl-inline d-lg-inline d-md-none d-sm-none d-none ps-3">
 <!--    <h3>WhoToFollowList </h3>-->
     ${WhoToFollowList()}
    </div>
