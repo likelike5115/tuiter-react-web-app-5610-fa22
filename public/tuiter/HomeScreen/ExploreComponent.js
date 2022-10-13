@@ -4,7 +4,7 @@ const ExploreComponent = () => {
     return(`
          
            <!-- image with overlaid text -->
-           ${PostSummaryList()}
+          
     `);
 }
 export default ExploreComponent;
