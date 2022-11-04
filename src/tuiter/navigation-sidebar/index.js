@@ -10,33 +10,47 @@ const NavigationSidebar = () => {
         <div className="list-group">
             <a  className="list-group-item">Tuiter</a>
             <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
-                Home
+                <i className="bi bi-house-door-fill me-2"></i>
+                <span> Home</span>
             </Link>
             <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
-                Explore
+                <i className="fa-solid fa-hashtag me-2"></i>
+                <span> Explore</span>
             </Link>
             <Link to="/" className="list-group-item">
-                Labs
+                <i className="fa-solid fa-asterisk me-2"></i>
+                <span> Labs</span>
             </Link>
 
             <a className={`list-group-item
                     ${active === 'messages'?'active':''}`}>
-                Messages
+                <i className="fa-regular fa-bell me-2"></i>
+                <span> Notifications</span>
             </a>
             <a className={`list-group-item
+                    ${active === 'messages'?'active':''}`}>
+                <i className="fa-regular fa-envelope  me-2"></i>
+                <span> Messages</span>
+            </a>
+
+            <a className={`list-group-item
                     ${active === 'bookmarks'?'active':''}`}>
-                Bookmarks
+                <i className="fa-regular fa-bookmark me-2"></i>
+                <span>Bookmarks</span>
             </a>
             <a className={`list-group-item
                     ${active === 'lists'?'active':''}`}>
-                Lists
+                <i className="fa-regular fa-rectangle-list me-2"></i>
+                <span>Lists</span>
             </a>
             <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}>
-                Profile
+                <i className="fa-regular fa-user me-2"></i>
+                <span>Profile</span>
             </Link>
             <a className={`list-group-item
                     ${active === 'more'?'active':''}`}>
-                More
+                <i className="fa-regular fa-comment-dots me-2"></i>
+                <span>More</span>
             </a>
         </div>
 
