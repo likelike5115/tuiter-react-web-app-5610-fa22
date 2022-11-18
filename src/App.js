@@ -9,7 +9,7 @@ import {Routes, Route} from "react-router";
 function App() {
   return (
       <BrowserRouter>
-          <div className="container">
+          <div className="container bg-white">
               <Routes>
                   <Route path="/*"
                          element={<Labs/>}/>
