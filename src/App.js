@@ -9,7 +9,7 @@ import {Routes, Route} from "react-router";
 function App() {
   return (
       <BrowserRouter>
-          <div className="bg-white">
+
               <div className="container">
                   <Routes>
                       <Route path="/*"
@@ -19,7 +19,7 @@ function App() {
                       <Route path="/tuiter/*" element={<Tuiter/>}/>
                   </Routes>
               </div>
-          </div>
+
       </BrowserRouter>
   );
 }
