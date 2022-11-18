@@ -17,9 +17,6 @@ import { configureStore }
 import {Provider} from "react-redux";
 const store = configureStore(
     {reducer: {who: whoReducer,  postsSummary: postsSummaryReducer, tuitsData: tuitsReducer, profile: profileReducer}});
-// import WhoToFollowListItem
-//     from "./who-to-follow-list/who-to-follow-list-item";
-// import logo from"../images/NASA_icon.png"
 function Tuiter() {
     return(
         <Provider store={store}>
