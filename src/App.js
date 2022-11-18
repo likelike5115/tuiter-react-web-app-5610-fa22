@@ -9,14 +9,16 @@ import {Routes, Route} from "react-router";
 function App() {
   return (
       <BrowserRouter>
-          <div className="container bg-white">
-              <Routes>
-                  <Route path="/*"
-                         element={<Labs/>}/>
-                  <Route path="/hello"
-                         element={<HelloWorld/>}/>
-                  <Route path="/tuiter/*" element={<Tuiter/>}/>
-              </Routes>
+          <div className="bg-white">
+              <div className="container">
+                  <Routes>
+                      <Route path="/*"
+                             element={<Labs/>}/>
+                      <Route path="/hello"
+                             element={<HelloWorld/>}/>
+                      <Route path="/tuiter/*" element={<Tuiter/>}/>
+                  </Routes>
+              </div>
           </div>
       </BrowserRouter>
   );
