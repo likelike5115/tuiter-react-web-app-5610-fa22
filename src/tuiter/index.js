@@ -1,12 +1,11 @@
-import {Link}
-    from "react-router-dom";
-import Nav from "../nav";
+import React from 'react'
 import NavigationSidebar from "../tuiter/navigation-sidebar/index"
 import WhoToFollowList from "./who-to-follow-list";
 import ExploreComponent from "./explore";
 import HomeComponent from "./home";
 import ProfileComponent from "./profile";
 import EditProfileComponent from "./profile/edit-profile";
+import postsSummaryReducer from "./reducers/posts-summary-reducer";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
 import whoReducer
@@ -17,7 +16,7 @@ import { configureStore }
     from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}});
+    {reducer: {who: whoReducer,  postsSummary: postsSummaryReducer, tuitsData: tuitsReducer, profile: profileReducer}});
 // import WhoToFollowListItem
 //     from "./who-to-follow-list/who-to-follow-list-item";
 // import logo from"../images/NASA_icon.png"

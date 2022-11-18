@@ -1,7 +1,7 @@
 import React from 'react';
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
@@ -23,7 +23,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
     return(
@@ -36,7 +36,7 @@ const TuitItem = (
                     <div className="row">
                         <div className="row pe-0">
                             <div className="col-11">
-                                <span className="fw-bolder">{post.userName}</span>
+                                <span className="fw-bolder">{post.username}</span>
                                 <i className="bi bi-patch-check-fill" style={{"color":"blue"}}></i>
                                 <span className="text-secondary"> {post.handle} - {post.time}</span>
                             </div>
