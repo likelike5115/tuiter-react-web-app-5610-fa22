@@ -46,6 +46,7 @@ const TuitItem = (
                             </div>
                         </div>
                     </div>
+                    <div>{post.title}</div>
                     <div>{post.tuit}</div>
 
 
