@@ -46,9 +46,13 @@ const TuitStats = (
                                 }))}
                                    className="bi bi-heart"></i>}
                             <span className="ms-2">{post.likes}</span>
+
+                        </div>
+                        <div className="col-3">
                             {post.disliked ?
                                 <i onClick={() => dispatch(updateTuitThunk({
                                     ...post,
+                                    disliked: false,
                                     dislikes: post.dislikes - 1
                                 }))}
                                    className="bi bi-hand-thumbs-down-fill"></i>
