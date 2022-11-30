@@ -24,13 +24,13 @@ const TuitStats = (
     return(
 
                     <div className="row mt-3">
-                        <div className="col-3">
+                        <div className="col-2">
                             <i className="bi bi-chat"></i><span className="ms-2">{post.replies}</span>
                         </div>
-                        <div className="col-3">
+                        <div className="col-2">
                             <i className="bi bi-repeat"></i><span className="ms-2">{post.retuits}</span>
                         </div>
-                        <div className="col-3">
+                        <div className="col-2">
                             {post.liked ?
                                 <i onClick={() => dispatch(updateTuitThunk({
                                     ...post,
@@ -48,7 +48,7 @@ const TuitStats = (
                             <span className="ms-2">{post.likes}</span>
 
                         </div>
-                        <div className="col-3">
+                        <div className="col-2">
                             {post.disliked ?
                                 <i onClick={() => dispatch(updateTuitThunk({
                                     ...post,
@@ -66,7 +66,7 @@ const TuitStats = (
                             }
                             <span className="ms-1">{post.dislikes}</span>
                         </div>
-                        <div className="col-3">
+                        <div className="col-2">
                             <i className="bi bi-upload"></i>
                         </div>
                     </div>
