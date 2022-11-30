@@ -15,6 +15,8 @@ const TuitStats = (
             "replies": 123,
             "retuits": 432,
             "likes": 2345,
+            "disliked": true,
+            "dislikes": 222,
             "handle": "@spacex",
             "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
         }
@@ -56,7 +58,7 @@ const TuitStats = (
                                 <i onClick={() => dispatch(updateTuitThunk({
                                     ...post,
                                     disliked: true,
-                                    dislikes: post.dislikes + 1
+                                    dislikes: post.dislikes - 1
                                 }))}
                                    className="bi bi-hand-thumbs-down"></i>
                             }
